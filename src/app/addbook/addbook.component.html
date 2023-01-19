@@ -1,0 +1,27 @@
+<p>addbook works!</p>
+
+<div class="container">
+    <h2> Add new Book</h2>
+    <form addbookform="ngForm" (ngSubmit)="addbookFormSubmit()">
+        <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" class="form-control" required [(ngModel)]="book.name" name="name>">
+        </div>
+        <div class="form-group">
+            <label for="author">Author</label>
+            <input type="text" class="form-control" required [(ngModel)]="book.author" name="author">
+        </div>
+        <div class="form-group">
+            <label for="dateyear">Year</label>
+            <input type="number" class="form-control" required [(ngModel)]="book.dateyear" name="dateyear"> 
+        </div>
+        <div class="form-group">
+            <label for="price">Price</label>
+            <input type="number" class="form-control" required [(ngModel)]="book.price" name="price"> 
+        </div>
+        <button type="submit" class="btn btn-success" > Submit</button>
+    </form>
+</div>
+
+
+

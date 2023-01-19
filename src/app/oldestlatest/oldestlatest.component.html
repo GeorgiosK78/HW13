@@ -1,0 +1,51 @@
+<div class="container">
+  <h2>Oldest Book</h2>
+  <table class="table table-hover">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Name</th>
+        <th scope="col">Author</th>
+        <th scope="col">Dateyear</th>
+        <th scope="col">Price</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngIf="oldestBook">
+        <th>{{oldestBook.id}}</th>
+        <td>{{oldestBook.name}}</td>
+        <td>{{oldestBook.author}}</td>
+        <td>{{oldestBook.dateyear}}</td>
+        <td>{{oldestBook.price}}</td>
+      </tr>
+    </tbody>
+      <br>
+      <br>
+  </table>
+  <h2>Latest Book</h2>
+  <table class="table table-hover">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Name</th>
+        <th scope="col">Author</th>
+        <th scope="col">Dateyear</th>
+        <th scope="col">Price</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngIf="latestBook">
+        <th>{{latestBook.id}}</th>
+        <td>{{latestBook.name}}</td>
+        <td>{{latestBook.author}}</td>
+        <td>{{latestBook.dateyear}}</td>
+        <td>{{latestBook.price}}</td>
+      </tr>
+    </tbody>
+  </table>
+    
+    <div>
+    <button class="btn btn-primary" (click)="navigateToViewbooks()">Back to Viewbooks</button>
+    </div>
+    
+    
